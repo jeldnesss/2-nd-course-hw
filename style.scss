@@ -1,0 +1,67 @@
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    height: 800px;
+    background-color: $back-color;
+    position: relative;
+}
+.header__container {
+    padding-top: 196px;
+    padding-left: 120px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 64px;
+    color: $text-color;
+    margin-bottom: 24px;
+}
+.header__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: $text-color;
+    margin-bottom: 48px;
+}
+
+.header__button {
+    border: 1px solid $text-color;
+    border-radius: 60px;
+    padding: 16px 28px;
+    width: 247px;
+    height: 66px;
+    background: $text-color;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    text-align: center;
+    color: $w-text;
+}
+.star{
+    position: absolute;
+}
+
+.star1 {
+    left: 63px;
+    top: 94px;
+}
+.star2 {
+    left: 156px;
+    top: 69px;
+}
+.star3 {
+    right: 455px;
+    bottom: 225px;
+}
+.star4 {
+    right: 344px;
+    bottom: 149px;
+}
+.star-big {
+    right: 0;
+    top: 0;
+}
