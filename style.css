@@ -43,6 +43,12 @@ body {
   color: #FFFFFF;
 }
 
+.header__button:hover {
+  border: 1px solid #202027;
+  color: #000;
+  background-color: transparent;
+}
+
 .star {
   position: absolute;
 }
@@ -74,6 +80,7 @@ body {
 
 .main {
   background-color: #202027;
+  position: relative;
 }
 .main__container {
   padding-top: 94px;
@@ -94,6 +101,38 @@ body {
   color: #FFFFFF;
   margin-bottom: 72px;
 }
+.main__star {
+  position: absolute;
+}
+.main__star1 {
+  z-index: 1;
+  top: 76px;
+  right: 0;
+}
+.main__star2 {
+  top: 769px;
+  left: 14px;
+}
+.main__star3 {
+  top: 821px;
+  left: 29px;
+}
+.main__star4 {
+  top: 1563px;
+  right: 123px;
+}
+.main__star5 {
+  top: 1569px;
+  right: 44px;
+}
+.main__star6 {
+  bottom: 45px;
+  right: 151px;
+}
+.main__star7 {
+  bottom: 65px;
+  right: 52px;
+}
 
 .about_games {
   margin-bottom: 96px;
@@ -111,6 +150,7 @@ body {
   box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
   background: #FFFFFF;
   border-radius: 30px;
+  z-index: 9;
 }
 .about_games__number {
   margin-bottom: 16px;
