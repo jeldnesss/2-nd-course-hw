@@ -65,3 +65,144 @@ body{
     right: 0;
     top: 0;
 }
+
+
+.main {
+    background-color: $text-color;
+
+    &__container{
+        padding-top: 94px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 144px;
+
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 64px;
+        color: $w-text;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 133%;
+        color: $w-text;
+        margin-bottom: 72px;
+
+    }
+}
+
+.about_games {
+    margin-bottom: 96px;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 378px);
+        align-items: start;
+        
+        column-gap: 32px;
+        row-gap: 32px;
+        justify-content: center;
+    }
+
+    &__card{
+        box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
+        background: $w-text;
+        border-radius: 30px;
+        
+        
+    }
+
+    &__img{
+        
+
+    }
+
+    &__number{
+        margin-bottom: 16px;
+        border-radius: 53px;
+        padding: 8px 14px 10px 14px;
+        width: 108px;
+        height: 36px;
+        background: #f7f7f7;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110%;
+        color: $text-color;
+    }
+
+    &__name{
+        font-weight: 700;
+        font-size: 32px;
+        color: $text-color;
+
+    }
+    &__description{
+        padding: 32px 32px 36px 32px;
+    }
+}
+
+.mini_games {
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        justify-content: center;
+    }
+    &__card{
+        width: 1200px;
+        background-color: $w-text;
+        border-radius: 30px;
+        height: 500px;
+        box-shadow: 0 20px 67px -12px rgba(0, 0, 0, 0.13);
+
+
+    }
+    &__left{
+        float: left;
+        width: 600px;
+
+    }
+    &__right{
+        float: right;
+        width: 600px;
+
+    }
+    &__text{
+        margin: 48px 48px auto 48px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        color: $text-color;
+        margin-bottom: 24px;
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 133%;
+        color: $text-color;
+        margin-bottom: 36px;
+    }
+    &__button{
+        border-radius: 60px;
+        padding: 16px 28px;
+        width: 247px;
+        height: 66px;
+        background: $text-color;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 142%;
+        text-align: center;
+        color: $w-text;
+    }
+}
+
+
+
+
+@media((min-width:1438px) and (max-width: 1847px)){
+    .card4, .card6{
+        margin-top: -38px;
+    }
+}
