@@ -223,6 +223,18 @@ body {
   color: #FFFFFF;
 }
 
+.footer {
+  height: 150px;
+  background-color: #BCEC30;
+  padding-top: 61px;
+}
+.footer__text {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+
 @media ((min-width: 1438px) and (max-width: 1847px)) {
   .card4, .card6 {
     margin-top: -38px;
