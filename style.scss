@@ -12,7 +12,7 @@ body{
 }
 .header__container {
     padding-top: 196px;
-    padding-left: 120px;
+    padding-left: calc(50% - 600px);
 }
 .header__title {
     font-weight: 700;
@@ -79,8 +79,8 @@ body{
     position: relative;
     &__container{
         padding-top: 94px;
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: calc(50% - 600px);;
+        padding-right: calc(50% - 600px);;
         padding-bottom: 144px;
 
     }
@@ -132,7 +132,7 @@ body{
     }
 }
 
-.about_games {
+.about-games {
     margin-bottom: 96px;
     &__content{
         display: grid;
@@ -180,7 +180,7 @@ body{
     }
 }
 
-.mini_games {
+.mini-games {
     &__content{
         display: flex;
         flex-direction: column;
@@ -193,6 +193,7 @@ body{
         border-radius: 30px;
         height: 500px;
         box-shadow: 0 20px 67px -12px rgba(0, 0, 0, 0.13);
+
 
 
     }
@@ -249,9 +250,9 @@ body{
 }
 
 
-
-@media((min-width:1438px) and (max-width: 1847px)){
-    .card4, .card6{
-        margin-top: -38px;
-    }
+.card4, .card6{
+    margin-top: -38px;
+}
+.title2{
+    margin-bottom: 72px;
 }
