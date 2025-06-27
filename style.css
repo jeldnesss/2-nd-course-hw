@@ -11,7 +11,7 @@ body {
 
 .header__container {
   padding-top: 196px;
-  padding-left: 120px;
+  padding-left: calc(50% - 600px);
 }
 
 .header__title {
@@ -84,8 +84,8 @@ body {
 }
 .main__container {
   padding-top: 94px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
   padding-bottom: 144px;
 }
 .main__title {
@@ -134,10 +134,10 @@ body {
   right: 52px;
 }
 
-.about_games {
+.about-games {
   margin-bottom: 96px;
 }
-.about_games__content {
+.about-games__content {
   display: grid;
   grid-template-columns: repeat(auto-fill, 378px);
   align-items: start;
@@ -146,13 +146,13 @@ body {
   row-gap: 32px;
   justify-content: center;
 }
-.about_games__card {
+.about-games__card {
   box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
   background: #FFFFFF;
   border-radius: 30px;
   z-index: 9;
 }
-.about_games__number {
+.about-games__number {
   margin-bottom: 16px;
   border-radius: 53px;
   padding: 8px 14px 10px 14px;
@@ -164,53 +164,53 @@ body {
   line-height: 110%;
   color: #202027;
 }
-.about_games__name {
+.about-games__name {
   font-weight: 700;
   font-size: 32px;
   color: #202027;
 }
-.about_games__description {
+.about-games__description {
   padding: 32px 32px 36px 32px;
 }
 
-.mini_games__content {
+.mini-games__content {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
   justify-content: center;
 }
-.mini_games__card {
+.mini-games__card {
   width: 1200px;
   background-color: #FFFFFF;
   border-radius: 30px;
   height: 500px;
   box-shadow: 0 20px 67px -12px rgba(0, 0, 0, 0.13);
 }
-.mini_games__left {
+.mini-games__left {
   float: left;
   width: 600px;
 }
-.mini_games__right {
+.mini-games__right {
   float: right;
   width: 600px;
 }
-.mini_games__text {
+.mini-games__text {
   margin: 48px 48px auto 48px;
 }
-.mini_games__title {
+.mini-games__title {
   font-weight: 700;
   font-size: 48px;
   color: #202027;
   margin-bottom: 24px;
 }
-.mini_games__description {
+.mini-games__description {
   font-weight: 400;
   font-size: 24px;
   line-height: 133%;
   color: #202027;
   margin-bottom: 36px;
 }
-.mini_games__button {
+.mini-games__button {
   border-radius: 60px;
   padding: 16px 28px;
   width: 247px;
@@ -235,8 +235,10 @@ body {
   color: #000;
 }
 
-@media ((min-width: 1438px) and (max-width: 1847px)) {
-  .card4, .card6 {
-    margin-top: -38px;
-  }
+.card4, .card6 {
+  margin-top: -38px;
+}
+
+.title2 {
+  margin-bottom: 72px;
 }/*# sourceMappingURL=style.css.map */
