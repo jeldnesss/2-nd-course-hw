@@ -21,7 +21,7 @@ function parity(){
     }
 }
 
-/*3 */
+/*3*/
 function square(a) {
     console.log(a ** 2);
     return a ** 2;
