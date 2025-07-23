@@ -230,6 +230,11 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+.mini-games__button:hover {
+  border: 1px solid #000;
+  color: #202027;
+  background-color: transparent;
+}
 
 .footer {
   height: 150px;
