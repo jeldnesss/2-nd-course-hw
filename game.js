@@ -23,36 +23,42 @@ function firstGame(event) {
     }
 }
 
-function secondGame() {
+function secondGame(event) {
+    event.preventDefault();
+    let result;
     let firstNum = Math.floor(Math.random() * 100) + 1;
     let secondNum = Math.floor(Math.random() * 100) + 1;
 
     let array = ['+', '-', '*', '/'];
     let operation = array[Math.floor(Math.random() * 4)];
-    if (operation == '+'){
+
+    if (operation === '+'){
         result = firstNum + secondNum;
-    } else if(operation == '-') {
+    } else if(operation === '-') {
         if (firstNum < secondNum){
             [firstNum, secondNum] = [secondNum, firstNum];
         }
         result = firstNum - secondNum;
-    } else if (operation == '*'){
+    } else if (operation === '*'){
         result = firstNum * secondNum;
     } else{
-        result = firstNum / secondNum;
+        result = Math.round(firstNum / secondNum);
     }
 
     let flag = true;
 
     while(flag){
         let userResult = prompt(`Решите пример ${firstNum} ${operation} ${secondNum}`);
-        if (userResult == result) {
+        
+        if (userResult === null){
+            alert('игра прерванна');
+            flag = false;
+            return;
+        }
+        userResult = Number(userResult);
+        if (userResult === result) {
             alert('всё верно!');
             flag = false;
-        } else {
-            let userResult = prompt(`попробуйте ещё ${firstNum} ${operation} ${secondNum}`);
-        }
-    }
-
-    
+        } 
+    } 
 }
