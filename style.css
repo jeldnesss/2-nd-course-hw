@@ -157,6 +157,9 @@ body {
   background: #FFFFFF;
   border-radius: 30px;
 }
+.about-games__card:hover {
+  transform: scale(1.08);
+}
 .about-games__number {
   margin-bottom: 16px;
   border-radius: 53px;
@@ -229,6 +232,11 @@ body {
   line-height: 142%;
   text-align: center;
   color: #FFFFFF;
+}
+.mini-games__button:hover {
+  border: 1px solid #000;
+  color: #202027;
+  background-color: transparent;
 }
 
 .footer {
