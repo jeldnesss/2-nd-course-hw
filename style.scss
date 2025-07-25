@@ -154,7 +154,9 @@ body{
         border-radius: 30px;
         
     }
-
+    &__card:hover{
+        transform: scale(1.08);
+    }
     
 
     &__number{

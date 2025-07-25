@@ -1,5 +1,5 @@
 let a = Number(prompt('введите число'));
-const Pi = 3.14;
+
 /*1*/ 
 function compare() {
     let firstNum = Number(prompt('введите первое число'));
@@ -14,7 +14,7 @@ function compare() {
 /*2 */
 function parity(){
     let userNum = Number(prompt('введите число'));
-    if (userNum % 2 == 0) {
+    if (userNum % 2 === 0) {
         return "Число четное";
     }else {
         return "Число нечетное";
@@ -24,6 +24,8 @@ function parity(){
 /*3*/
 function square(a) {
     console.log(a ** 2);
+}
+function square1(a) {
     return a ** 2;
 }
 
@@ -65,18 +67,18 @@ function numberCheck(){
 const circle1 = {
     radius: 10,
     getArea(Pi) {
-        return this.radius ** 2 * Pi ;
+        return this.radius ** 2 * Math.PI ;
     },
     getPerimeter(Pi) {
-        return this.radius * 2 * Pi;
+        return this.radius * 2 * Math.PI;
     }
 }
 const circle2 = {
     radius: 6,
     getArea(Pi) {
-        return this.radius ** 2 * Pi ;
+        return this.radius ** 2 * Math.PI ;
     },
     getPerimeter(Pi) {
-        return this.radius * 2 * Pi;
+        return this.radius * 2 * Math.PI;
     }
 }
