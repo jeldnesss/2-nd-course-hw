@@ -154,7 +154,9 @@ body{
         border-radius: 30px;
         
     }
-
+    &__card:hover{
+        transform: scale(1.08);
+    }
     
 
     &__number{
@@ -238,6 +240,11 @@ body{
         line-height: 142%;
         text-align: center;
         color: $w-text;
+    }
+    &__button:hover{
+        border: 1px solid #000;
+        color: $text-color;
+        background-color: transparent;
     }
 }
 
