@@ -117,3 +117,19 @@ function fifthGame(event, quiz){
     }
     alert(`Количество отгаданных ${counter}`);
 }
+
+function sixthGame(event) {
+    event.preventDefault();
+    let userChoice = prompt('Выберите камень ножницы бумага').toLowerCase().trim();
+    const gameArray = ["камень", "ножницы", "бумага"];
+
+    let compChoice = gameArray[Math.floor(Math.random() * 3)].toLowerCase();
+
+    if (((userChoice === 'камень') && (compChoice === 'ножницы')) || ((userChoice === 'ножницы') && (compChoice === 'бумага')) || ((userChoice === 'бумага') && (compChoice === 'камень'))){
+        alert(`Вы победили \nваш выбор ${userChoice} \nвыбор компьютера ${compChoice}`);
+    } else if (userChoice === compChoice) {
+        alert(`Ничья \nваш выбор ${userChoice} \nвыбор компьютера ${compChoice}`);
+    } else{
+        alert(`Вы проиграли \nваш выбор ${userChoice} \выбор компьютера ${compChoice}`);
+    }
+}
