@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw-8-5</title>
+</head>
+<body>
+    <p class="description">ffffffff</p>
+    <p class="p">ttttttt</p>
+    <p class="description">aaaaaaaaaaa</p>
+    <p class="text">pppppppp</p>
+    <p class="description">ssssssssss</p>
+    <script>
+        let descEl = document.querySelectorAll('.description');
+
+        descEl.forEach(element => {
+            element.textContent = 'Измененный текст';
+        });
+    </script>
+</body>
+</html>
