@@ -15,6 +15,10 @@ const quiz = [
                correctAnswer: 2
            }
        ];
+const btnGame7 = document.getElementById('gameButtonColors');
+const body = document.querySelector('.main__container');
+const colors = ['#222222', '#FFFFFF', '#555555', '#00000099', '#68C318', '#FF006E', '#00D5FF', '#4B0082', '#FFBE00', '#00FF80'];
+
 
 function firstGame(event) {
     event.preventDefault();
@@ -133,3 +137,11 @@ function sixthGame(event) {
         alert(`Вы проиграли \nваш выбор ${userChoice} \выбор компьютера ${compChoice}`);
     }
 }
+
+btnGame7.addEventListener('click', function(event){
+    event.preventDefault();
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    body.style.backgroundColor = color;
+});
+
+
