@@ -16,6 +16,7 @@ const quiz = [
            }
        ];
 const btnGame7 = document.getElementById('gameButtonColors');
+const btnGameMobile7 = document.getElementById('gameButtonColorsMobile');
 const body = document.querySelector('.main__container');
 const colors = ['#222222', '#FFFFFF', '#555555', '#00000099', '#68C318', '#FF006E', '#00D5FF', '#4B0082', '#FFBE00', '#00FF80'];
 
@@ -138,10 +139,19 @@ function sixthGame(event) {
     }
 }
 
-btnGame7.addEventListener('click', function(event){
-    event.preventDefault();
+function seventhGame(colors, body){
     let color = colors[Math.floor(Math.random() * colors.length)];
     body.style.backgroundColor = color;
+}
+
+btnGame7.addEventListener('click', function(event){
+    event.preventDefault();
+    seventhGame(colors, body);
+});
+
+btnGameMobile7.addEventListener('click', function(event){
+    event.preventDefault();
+    seventhGame(colors, body);
 });
 
 

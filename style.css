@@ -14,9 +14,51 @@ body {
   position: relative;
 }
 
+.header__marque {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  display: flex;
+}
+
+.header__marque-container {
+  display: flex;
+  gap: 51px;
+  align-items: center;
+  white-space: nowrap;
+  width: 3220px;
+  flex-shrink: 0;
+  padding: 27px 27px 30px 49px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: #bcec30;
+  animation: running-stroke 20s linear infinite;
+}
+
+.header__marque-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #202027;
+}
+
+@keyframes running-stroke {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 .header__container {
   padding-top: 196px;
   padding-left: calc(50% - 600px);
+  position: relative;
+  z-index: 9;
 }
 
 .header__title {
@@ -60,6 +102,7 @@ body {
 
 .star {
   position: absolute;
+  z-index: 1;
 }
 
 .star1 {
@@ -85,6 +128,7 @@ body {
 .star-big {
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 .main {
@@ -112,9 +156,9 @@ body {
 }
 .main__star {
   position: absolute;
+  z-index: 1;
 }
 .main__star1 {
-  z-index: 1;
   top: 76px;
   right: 0;
 }
@@ -264,6 +308,14 @@ body {
   margin-bottom: 72px;
 }
 
+@media (max-width: 1220px) {
+  .mini-games__card {
+    overflow: hidden;
+  }
+  .mini-games__content {
+    overflow-x: auto;
+  }
+}
 @media (max-width: 426px) {
   .star {
     display: none;
