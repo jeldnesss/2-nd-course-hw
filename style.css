@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(./reset.css);
 html {
   scroll-behavior: smooth;
 }
@@ -314,6 +315,11 @@ body {
   }
   .mini-games__content {
     overflow-x: auto;
+  }
+}
+@media (max-width: 1198px) {
+  .card4, .card6 {
+    margin-top: 0px;
   }
 }
 @media (max-width: 426px) {

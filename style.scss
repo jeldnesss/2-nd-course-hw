@@ -1,5 +1,6 @@
 @import 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./reset.css);
 
 html{
     scroll-behavior: smooth;
@@ -332,4 +333,11 @@ body{
         }
     }
 }
+@media (max-width: 1198px){
+    .card4, .card6{
+        margin-top: 0px;
+    }
+}
+
+
 @import 'mobile';
